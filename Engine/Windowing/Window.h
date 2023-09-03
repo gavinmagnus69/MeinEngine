@@ -4,7 +4,7 @@
 
 #ifndef MEINENGINE_WINDOW_H
 #define MEINENGINE_WINDOW_H
-#include <Windows.h>
+#include <windows.h>
 
 class Window {
 public:

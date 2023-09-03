@@ -56,12 +56,12 @@ build CMakeFiles/MeinEngine.dir/main.cpp.obj: CXX_COMPILER__MeinEngine_unscanned
   OBJECT_DIR = CMakeFiles\MeinEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\MeinEngine.dir
 
-build CMakeFiles/MeinEngine.dir/Engine/Window.cpp.obj: CXX_COMPILER__MeinEngine_unscanned_Debug C$:/romanfiles/MeinEngine/Engine/Window.cpp || cmake_object_order_depends_target_MeinEngine
-  DEP_FILE = CMakeFiles\MeinEngine.dir\Engine\Window.cpp.obj.d
+build CMakeFiles/MeinEngine.dir/Engine/Windowing/Window.cpp.obj: CXX_COMPILER__MeinEngine_unscanned_Debug C$:/romanfiles/MeinEngine/Engine/Windowing/Window.cpp || cmake_object_order_depends_target_MeinEngine
+  DEP_FILE = CMakeFiles\MeinEngine.dir\Engine\Windowing\Window.cpp.obj.d
   FLAGS = -g -std=gnu++1z -fdiagnostics-color=always
   INCLUDES = -IC:/romanfiles/MeinEngine/App -IC:/romanfiles/MeinEngine/Engine
   OBJECT_DIR = CMakeFiles\MeinEngine.dir
-  OBJECT_FILE_DIR = CMakeFiles\MeinEngine.dir\Engine
+  OBJECT_FILE_DIR = CMakeFiles\MeinEngine.dir\Engine\Windowing
 
 build CMakeFiles/MeinEngine.dir/App/AppWindow.cpp.obj: CXX_COMPILER__MeinEngine_unscanned_Debug C$:/romanfiles/MeinEngine/App/AppWindow.cpp || cmake_object_order_depends_target_MeinEngine
   DEP_FILE = CMakeFiles\MeinEngine.dir\App\AppWindow.cpp.obj.d
@@ -69,6 +69,13 @@ build CMakeFiles/MeinEngine.dir/App/AppWindow.cpp.obj: CXX_COMPILER__MeinEngine_
   INCLUDES = -IC:/romanfiles/MeinEngine/App -IC:/romanfiles/MeinEngine/Engine
   OBJECT_DIR = CMakeFiles\MeinEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\MeinEngine.dir\App
+
+build CMakeFiles/MeinEngine.dir/Engine/GraphicsEngine/GraphicsEngine.cpp.obj: CXX_COMPILER__MeinEngine_unscanned_Debug C$:/romanfiles/MeinEngine/Engine/GraphicsEngine/GraphicsEngine.cpp || cmake_object_order_depends_target_MeinEngine
+  DEP_FILE = CMakeFiles\MeinEngine.dir\Engine\GraphicsEngine\GraphicsEngine.cpp.obj.d
+  FLAGS = -g -std=gnu++1z -fdiagnostics-color=always
+  INCLUDES = -IC:/romanfiles/MeinEngine/App -IC:/romanfiles/MeinEngine/Engine
+  OBJECT_DIR = CMakeFiles\MeinEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\MeinEngine.dir\Engine\GraphicsEngine
 
 
 # =============================================================================
@@ -78,7 +85,7 @@ build CMakeFiles/MeinEngine.dir/App/AppWindow.cpp.obj: CXX_COMPILER__MeinEngine_
 #############################################
 # Link the executable MeinEngine.exe
 
-build MeinEngine.exe: CXX_EXECUTABLE_LINKER__MeinEngine_Debug CMakeFiles/MeinEngine.dir/main.cpp.obj CMakeFiles/MeinEngine.dir/Engine/Window.cpp.obj CMakeFiles/MeinEngine.dir/App/AppWindow.cpp.obj
+build MeinEngine.exe: CXX_EXECUTABLE_LINKER__MeinEngine_Debug CMakeFiles/MeinEngine.dir/main.cpp.obj CMakeFiles/MeinEngine.dir/Engine/Windowing/Window.cpp.obj CMakeFiles/MeinEngine.dir/App/AppWindow.cpp.obj CMakeFiles/MeinEngine.dir/Engine/GraphicsEngine/GraphicsEngine.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\MeinEngine.dir
