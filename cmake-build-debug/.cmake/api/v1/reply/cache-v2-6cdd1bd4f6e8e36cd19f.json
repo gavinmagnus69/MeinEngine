@@ -1254,6 +1254,30 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "D3D11_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory where d3dx11.lib resides"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "D3D11_LIBRARY-NOTFOUND"
+		},
+		{
+			"name" : "D3DX11_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory where d3dx11.lib resides"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "D3DX11_LIBRARY-NOTFOUND"
+		},
+		{
 			"name" : "MeinEngine_BINARY_DIR",
 			"properties" : 
 			[
@@ -1300,6 +1324,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "TRUE"
+		},
+		{
+			"name" : "dxlib",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "dxlib-NOTFOUND"
 		}
 	],
 	"kind" : "cache",

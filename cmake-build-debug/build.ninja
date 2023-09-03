@@ -87,7 +87,7 @@ build CMakeFiles/MeinEngine.dir/Engine/GraphicsEngine/GraphicsEngine.cpp.obj: CX
 
 build MeinEngine.exe: CXX_EXECUTABLE_LINKER__MeinEngine_Debug CMakeFiles/MeinEngine.dir/main.cpp.obj CMakeFiles/MeinEngine.dir/Engine/Windowing/Window.cpp.obj CMakeFiles/MeinEngine.dir/App/AppWindow.cpp.obj CMakeFiles/MeinEngine.dir/Engine/GraphicsEngine/GraphicsEngine.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -ld3d11  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\MeinEngine.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

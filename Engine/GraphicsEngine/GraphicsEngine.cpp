@@ -13,9 +13,9 @@ GraphicsEngine::~GraphicsEngine() {
 }
 
 bool GraphicsEngine::init() {
-    return false;
+    return true;
 }
 
 bool GraphicsEngine::release() {
-    return false;
+    return true;
 }

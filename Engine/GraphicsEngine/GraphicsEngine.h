@@ -4,7 +4,7 @@
 
 #ifndef MEINENGINE_GRAPHICSENGINE_H
 #define MEINENGINE_GRAPHICSENGINE_H
-
+#include <d3d11.h>
 
 class GraphicsEngine {
 public:
