@@ -1,0 +1,3 @@
+C:/romanfiles/MeinEngine/cmake-build-debug/CMakeFiles/MeinEngine.dir
+C:/romanfiles/MeinEngine/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/romanfiles/MeinEngine/cmake-build-debug/CMakeFiles/rebuild_cache.dir
