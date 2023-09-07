@@ -16,6 +16,10 @@ public:
     //release all the resources loaded
 
     bool release();
+private:
+    ID3D11Device * m3_d3d_device;
+    D3D_FEATURE_LEVEL m_feature_level;
+    ID3D11DeviceContext * m_imm_context;
 
 
 

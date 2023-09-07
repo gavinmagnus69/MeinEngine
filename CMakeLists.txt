@@ -12,4 +12,4 @@ add_executable(MeinEngine main.cpp Engine/Windowing/Window.h Engine/Windowing/Wi
         Engine/GraphicsEngine/GraphicsEngine.h
         Engine/GraphicsEngine/GraphicsEngine.cpp)
 
-target_link_libraries(MeinEngine PRIVATE d3d11.lib)
+target_link_libraries(MeinEngine PUBLIC d3d11.lib)
