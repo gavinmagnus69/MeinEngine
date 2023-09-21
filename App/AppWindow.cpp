@@ -17,13 +17,14 @@ void AppWindow::onUpdate() {
 }
 
 void AppWindow::onCreate() {
-
+    //Window::onCreate();
+    GraphicsEngine::get()->init();
 }
 
 void AppWindow::onDestroy() {
 
     Window::onDestroy();
-
+    GraphicsEngine::get()->release();
 }
 
 

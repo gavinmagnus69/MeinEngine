@@ -29,7 +29,7 @@ bool GraphicsEngine::init() {
     UINT num_feature_levels = ARRAYSIZE(feature_levels);
     UINT num_driver_types = ARRAYSIZE(driver_types);
     for(UINT drive_type_index = 0; drive_type_index < num_driver_types; ){
-         res = D3D11CreateDevice(NULL, driver_types[drive_type_index], NULL, NULL, feature_levels, num_feature_levels, D3D11_SDK_VERSION, &m3_d3d_device,
+         res = D3D11CreateDevice(NULL, driver_types[drive_type_index], NULL, NULL, feature_levels, num_feature_levels, D3D11_SDK_VERSION, &m_d3d_device,
                           &m_feature_level, &m_imm_context);
 
         if(SUCCEEDED(res)){
@@ -41,10 +41,24 @@ bool GraphicsEngine::init() {
     if(FAILED(res)){
         return false;
     }
-
+    m_d3d_device->QueryInterface(__uuidof(IDXGIDevice), (void**)&m_dxgi_device);
+    m_dxgi_device->GetParent(__uuidof(IDXGIAdapter), (void**)&m_dxgi_adapter);
+    m_dxgi_adapter->GetParent(__uuidof(IDXGIFactory), (void**)&m_dxgi_factory);
+    m_dxgi_factory->CreateSwapChain()
     return true;
 }
 
 bool GraphicsEngine::release() {
+
+    m_imm_context->Release();
+    m_d3d_device->Release();
     return true;
+}
+
+GraphicsEngine *GraphicsEngine::get() {
+
+
+    static GraphicsEngine engine;
+
+    return &engine;
 }

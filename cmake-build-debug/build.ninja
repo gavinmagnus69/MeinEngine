@@ -52,30 +52,37 @@ build cmake_object_order_depends_target_MeinEngine: phony || CMakeFiles/MeinEngi
 build CMakeFiles/MeinEngine.dir/main.cpp.obj: CXX_COMPILER__MeinEngine_unscanned_Debug C$:/romanfiles/MeinEngine/main.cpp || cmake_object_order_depends_target_MeinEngine
   DEP_FILE = CMakeFiles\MeinEngine.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++1z -fdiagnostics-color=always
-  INCLUDES = -IC:/romanfiles/MeinEngine/App -IC:/romanfiles/MeinEngine/Engine
+  INCLUDES = -IC:/romanfiles/MeinEngine/App -IC:/romanfiles/MeinEngine/Engine -IC:/romanfiles/MeinEngine/Engine/GraphicsEngine -IC:/romanfiles/MeinEngine/Engine/GraphicsEngine/SwapChain
   OBJECT_DIR = CMakeFiles\MeinEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\MeinEngine.dir
 
 build CMakeFiles/MeinEngine.dir/Engine/Windowing/Window.cpp.obj: CXX_COMPILER__MeinEngine_unscanned_Debug C$:/romanfiles/MeinEngine/Engine/Windowing/Window.cpp || cmake_object_order_depends_target_MeinEngine
   DEP_FILE = CMakeFiles\MeinEngine.dir\Engine\Windowing\Window.cpp.obj.d
   FLAGS = -g -std=gnu++1z -fdiagnostics-color=always
-  INCLUDES = -IC:/romanfiles/MeinEngine/App -IC:/romanfiles/MeinEngine/Engine
+  INCLUDES = -IC:/romanfiles/MeinEngine/App -IC:/romanfiles/MeinEngine/Engine -IC:/romanfiles/MeinEngine/Engine/GraphicsEngine -IC:/romanfiles/MeinEngine/Engine/GraphicsEngine/SwapChain
   OBJECT_DIR = CMakeFiles\MeinEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\MeinEngine.dir\Engine\Windowing
 
 build CMakeFiles/MeinEngine.dir/App/AppWindow.cpp.obj: CXX_COMPILER__MeinEngine_unscanned_Debug C$:/romanfiles/MeinEngine/App/AppWindow.cpp || cmake_object_order_depends_target_MeinEngine
   DEP_FILE = CMakeFiles\MeinEngine.dir\App\AppWindow.cpp.obj.d
   FLAGS = -g -std=gnu++1z -fdiagnostics-color=always
-  INCLUDES = -IC:/romanfiles/MeinEngine/App -IC:/romanfiles/MeinEngine/Engine
+  INCLUDES = -IC:/romanfiles/MeinEngine/App -IC:/romanfiles/MeinEngine/Engine -IC:/romanfiles/MeinEngine/Engine/GraphicsEngine -IC:/romanfiles/MeinEngine/Engine/GraphicsEngine/SwapChain
   OBJECT_DIR = CMakeFiles\MeinEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\MeinEngine.dir\App
 
 build CMakeFiles/MeinEngine.dir/Engine/GraphicsEngine/GraphicsEngine.cpp.obj: CXX_COMPILER__MeinEngine_unscanned_Debug C$:/romanfiles/MeinEngine/Engine/GraphicsEngine/GraphicsEngine.cpp || cmake_object_order_depends_target_MeinEngine
   DEP_FILE = CMakeFiles\MeinEngine.dir\Engine\GraphicsEngine\GraphicsEngine.cpp.obj.d
   FLAGS = -g -std=gnu++1z -fdiagnostics-color=always
-  INCLUDES = -IC:/romanfiles/MeinEngine/App -IC:/romanfiles/MeinEngine/Engine
+  INCLUDES = -IC:/romanfiles/MeinEngine/App -IC:/romanfiles/MeinEngine/Engine -IC:/romanfiles/MeinEngine/Engine/GraphicsEngine -IC:/romanfiles/MeinEngine/Engine/GraphicsEngine/SwapChain
   OBJECT_DIR = CMakeFiles\MeinEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\MeinEngine.dir\Engine\GraphicsEngine
+
+build CMakeFiles/MeinEngine.dir/Engine/GraphicsEngine/SwapChain/SwapChain.cpp.obj: CXX_COMPILER__MeinEngine_unscanned_Debug C$:/romanfiles/MeinEngine/Engine/GraphicsEngine/SwapChain/SwapChain.cpp || cmake_object_order_depends_target_MeinEngine
+  DEP_FILE = CMakeFiles\MeinEngine.dir\Engine\GraphicsEngine\SwapChain\SwapChain.cpp.obj.d
+  FLAGS = -g -std=gnu++1z -fdiagnostics-color=always
+  INCLUDES = -IC:/romanfiles/MeinEngine/App -IC:/romanfiles/MeinEngine/Engine -IC:/romanfiles/MeinEngine/Engine/GraphicsEngine -IC:/romanfiles/MeinEngine/Engine/GraphicsEngine/SwapChain
+  OBJECT_DIR = CMakeFiles\MeinEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\MeinEngine.dir\Engine\GraphicsEngine\SwapChain
 
 
 # =============================================================================
@@ -85,7 +92,7 @@ build CMakeFiles/MeinEngine.dir/Engine/GraphicsEngine/GraphicsEngine.cpp.obj: CX
 #############################################
 # Link the executable MeinEngine.exe
 
-build MeinEngine.exe: CXX_EXECUTABLE_LINKER__MeinEngine_Debug CMakeFiles/MeinEngine.dir/main.cpp.obj CMakeFiles/MeinEngine.dir/Engine/Windowing/Window.cpp.obj CMakeFiles/MeinEngine.dir/App/AppWindow.cpp.obj CMakeFiles/MeinEngine.dir/Engine/GraphicsEngine/GraphicsEngine.cpp.obj
+build MeinEngine.exe: CXX_EXECUTABLE_LINKER__MeinEngine_Debug CMakeFiles/MeinEngine.dir/main.cpp.obj CMakeFiles/MeinEngine.dir/Engine/Windowing/Window.cpp.obj CMakeFiles/MeinEngine.dir/App/AppWindow.cpp.obj CMakeFiles/MeinEngine.dir/Engine/GraphicsEngine/GraphicsEngine.cpp.obj CMakeFiles/MeinEngine.dir/Engine/GraphicsEngine/SwapChain/SwapChain.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -ld3d11  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\MeinEngine.dir

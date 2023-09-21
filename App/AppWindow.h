@@ -5,6 +5,7 @@
 #ifndef MEINENGINE_APPWINDOW_H
 #define MEINENGINE_APPWINDOW_H
 #include "Windowing/Window.h"
+#include "GraphicsEngine.h"
 
 class AppWindow : public Window{
 public:
